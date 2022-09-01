@@ -13,6 +13,33 @@
         <section></section>
         <article></article>
         <aside></aside>
+        <iframe width="560" height="400" src="https://www.youtube.com/embed/KYPHTSEU49Y"></iframe>
+        <embed width="560" height="400" src="https://www.youtube.com/embed/KYPHTSEU49Y"></embed>
+        <iframe width="560" height="400" src="https://www.youtube.com/embed/KYPHTSEU49Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <form>
+            아이디 <input type="text" name="userid"><br>
+            패스워드 <input type="password" name="password"><br>
+            <input type="checkbox" name="loginhold" checked>로그인 유지<br>
+            <input type="button" value="로그인">
+            <br>
+            <br>
+            <input type="text" name="userid" value="" placeholder="아이디 입력">
+            <textarea rows="3" cols="80" maxlength="255" placeholder="질문내용입력"></textarea>
+        </form>
+
+        <form name="myform" method="post" action="./proc" enctype="multipart/form-data">
+            <input type="file" name="photo" required multiple>
+            <input type="submit" value="저장">
+        </form>
+
+        <form name="myform" method="post" action="./calc" target="calcframe" autocomplete="off" novalidate>
+            <input type="text" name="vala" value="">+
+            <input type="text" name="valb" value="">+
+            <input type="range" name="valc" min="0" max="100" value="">
+            <input type="submit" value="계산">
+        </form>
+
     </main>
     <footer></footer>
 </body>

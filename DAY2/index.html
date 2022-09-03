@@ -19,17 +19,18 @@
     <input type="reset" value="초기화">
     <input type="submit" value="등록"><br>
 
-<form name="searchform" method="post" action="./search.php">
-    <input type="search" name="q" value="" placeholder="검색어입력">
-    <input type="submit" value="검색">
+    <form name="searchform" method="post" action="./search.php">
+        <input type="search" name="q" value="" placeholder="검색어입력">
+        <input type="submit" value="검색">
+    </form>
 </form>
 
-<div class="title">사용자정보</div>
+    <div class="title">사용자정보</div>
 
 <form name="searchform" method="post" action="./search.php">
     <div class="item">
         <div class="fieldlabel">사용 웹 브라우저</div>
-        <select id="browsers" name="browsers">
+        <select id="browsers" name="browsers" multiple size="3" required autofocus>
             <option value="크롬">크롬</option>
             <option value="사파리">사파리</option>
             <option value="엣지">엣지</option>
@@ -56,7 +57,8 @@
         <div class="fieldlabel">홈페이지</div>
         <input type="url" placeholder="address@domain.com" name="email1">
     </div>
-    <input type="submit" value="저장">
-</form>
+    <input type="submit" value="저장"><br>
+    <input type="file" name="img" accept="image/*">
+    <input type="file" name="img2" accept=".jpg,.png">
 
 </form>
